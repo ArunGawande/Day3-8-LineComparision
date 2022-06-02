@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class LineComparision 
 {
-    public static void main(String[] args) 
-    {
-		double x1, x2, y1, y2, LengthOfLine , LengthOfLine2 ;  //Declaration 
+        double x1, x2, y1, y2, LengthOfLine , LengthOfLine2 ;  //Declaration 
 		
+        public void LengthOfLine()
+		{
 		Scanner scanner = new Scanner(System.in);
 		
 		// taking input from user
@@ -47,5 +47,13 @@ public class LineComparision
 		s2 = Double.toString(LengthOfLine2);
 		System.out.println("Equality of two lines using Equal Method : " +s1.equals(s2));
 		System.out.println("Compare of two length is :" + s1.compareTo(s2));
-	}
+		
+		}
+		public static void main(String[] args) 
+		{
+			LineComparision Line = new LineComparision();
+			
+			Line.LengthOfLine();
+		}
 }
+
